@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Question & Answer Papers</title>
+</head>
+<body>
+    <h1>Upload Question Paper and Answer Paper</h1>
+    <form action="/grade" method="POST" enctype="multipart/form-data">
+        <label for="question_paper">Question Paper (PDF):</label>
+        <input type="file" name="question_paper" id="question_paper" accept="application/pdf" required><br><br>
+
+        <label for="answer_paper">Answer Paper (PDF):</label>
+        <input type="file" name="answer_paper" id="answer_paper" accept="application/pdf" required><br><br>
+
+        <button type="submit">Upload & Grade</button>
+    </form>
+</body>
+</html>
+
